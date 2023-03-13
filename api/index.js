@@ -17,7 +17,7 @@ app.use(
 app.get('/api', (req, res) => {
   res.setHeader('Content-Type', 'text/html')
   res.setHeader('Cache-Control', 's-max-age=1, stale-while-revalidate')
-  res.send('hi wyd') // optional message
+  res.send('hi wyd')
 })
 
 app.get('/api/smart-floor-price', (req, res) => {
