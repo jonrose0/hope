@@ -17,13 +17,15 @@ async function getSmartFloorPrice(contractAddress) {
     //   },
     // }
     // const data = await fetch(config).then((res) => res.data)
-    const data = await fetch('https://thisisit-six.vercel.app/api/getSmartFloorPrice').then((res) => res.json()).then(data => el.innerHTML += data.slip.advice)
+    const data = await fetch('/apismart-floor-price').then((res) => res.json()).then(data => el.innerHTML += data.slip.advice)
     // el.innerHTML = data
     return data
   } catch (err) {
     console.log(err)
   }
 }
+
+// https://thisisit-six.vercel.app/api/getSmartFloorPrice
 
 // el.innerHTML = getSmartFloorPrice('lol')
 
